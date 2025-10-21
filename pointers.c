@@ -1,8 +1,7 @@
-
 /*
 Created by Nicholas Howland
 Fall 2025 in CSCD 240
-Purpose: messing with pointers
+Purpose:
 */
 // included libraries
 #include <stdio.h>
@@ -18,20 +17,23 @@ int main(void) {
         int x = 42;
         int *p = &x;
         int **l = &p;
-
+        printf("\n############# True Memory Addresses\n");
         printf("True memory address of x: %p\n",&x);
         printf("True memory address of p: %p\n",&p);
         printf("True memory address of l: %p\n",&l);
 
+        printf("\n############# Stored Memory Addresses\n");
+        printf("Address stored in p: %p\n",p);
+        printf("Address stored in l: %p\n",l);
 
-        printf("Address stored in p of x: %p\n",p);
-        // an * will de-reference the variuble p and get the pointer to x
-        printf("Value stored in x using a pointer: %d\n\n",*p);
+        printf("\n############# Value of x in each variuble\n");
+        printf("x: %d\n",x);
+        printf("p: %d\n",*p);
+        printf("l: %d\n",**l);
 
-        // must use two * because this is a pointer to a pointer
-
+        printf("\n############# Calling the Value by manual pointers\n");
         // manual memory traversal
-        printf("Vallue of l by using the index of x %d\n", *(p+4) );
+        printf("Value of l by using the index of x %d\n\n", *(p+4) );
 
         int arr[5] ={1,2,3,4,5};
         int *ptr = arr;
@@ -46,3 +48,4 @@ int main(void) {
         }
 
         return 0;
+}
