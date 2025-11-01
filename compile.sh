@@ -21,6 +21,7 @@ Notes:
 EOF
 }
 
+
 ensure_dirs() {
   [[ -d "$LIB_DIR" ]] || { echo "Error: '$LIB_DIR' directory not found."; exit 1; }
   mkdir -p "$BIN_DIR"
@@ -90,7 +91,8 @@ compile_file() {
 
 main() {
   if [[ $# -eq 0 ]]; then
-    compile_file "$1"
+    useage()
+    echo "Please use the -n or -e options"
     exit 0
   fi
 
