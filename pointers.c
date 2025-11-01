@@ -1,7 +1,7 @@
 /*
 Created by Nicholas Howland
 Fall 2025 in CSCD 240
-Purpose:
+Purpose: learning about memory pointers
 */
 // included libraries
 #include <stdio.h>
