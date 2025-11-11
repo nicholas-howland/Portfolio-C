@@ -10,11 +10,21 @@ Using both indexes and pointers to traverse arrays
 ## dynamic-arrays.c
 Creating dynamic arrays through the use of memalloc realloc and sentinal values as well as through the use of defined array lengths
 
+## if-statements.c
+Contains some if statement logic and variuble declarations.
+
 ## loops.c
 Using loops like while and for to count numbers
+
+## memory.c
+Using malloc, realloc, and free functions when altering the size of arrays
 
 ## pointers.c
 Using pointers to assign values to memory addresses, printing memory addresses of both pointer locations as well as destinations
 
-## if-statements.c
-Contains some if statement logic and variuble declarations.
+## windows-forbidden-snack.c
+Simple c program used for security awareness training, harmless but annoying. If a user clicks on a link a forbidden snack error message will appear with some hackerish dialouge until the task is killed.
+
+## windows-threading.c 
+Windows threading example vibe coded, reference only.
+
