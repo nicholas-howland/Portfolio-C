@@ -7,6 +7,11 @@ Purpose:
 #include <stdio.h>
 #include <stdlib.h>
 
+// will update the value in the memory address that n resides similar to globlal scope
+void update(int *n) {
+    *n = *n + 10;
+}
+
 // main execution area
 int main(void) {
         int arr[4] = {0,1,2,3};
