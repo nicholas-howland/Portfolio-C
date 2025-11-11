@@ -21,7 +21,7 @@ if [ ! -f "source/$PRONAME.c" ]; then cp source/00-template.c source/$PRONAME.c;
 if [ $1 == "-e" ]; then PRONAME=$2; nano source/$PRONAME.c;
 gcc source/$PRONAME.c -o bin/$PRONAME;
 valgrind bin/$PRONAME;
-elif [ $1 == "-c" ]; then PRONAME=$1; nano source/$PRONAME.c;
+elif [ $1 == "-c" ]; then PRONAME=$2;
 gcc source/$PRONAME.c -o bin/$PRONAME
 valgrind bin/$PRONAME
 else
