@@ -6,6 +6,7 @@ if [ ! -d "source" ]; then mkdir source; fi
 if [ ! -f "source/00-template.c" ];
 then
 echo "#include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     printf(\"Hello, World!\\n\");
