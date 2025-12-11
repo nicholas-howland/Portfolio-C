@@ -4,7 +4,7 @@
 DWORD WINAPI MyBackgroundFunction(LPVOID lpParam) {
     for (int i = 0; i < 5; i++) {
         printf("Running in background...\n");
-        Sleep(1000); // Simulate work
+        Sleep(1000); // insert code to run in the background here
     }
     return 0;
 }
