@@ -36,3 +36,5 @@ Working with structs in c.
 ## windows-threading.c 
 Windows threading example vibe coded, reference only.
 
+## LinkedList
+This is a directory with the code required to create a linked list that can be interfaced with via direct calls. Without any edits the user is thrown into a menu driven linked list interaction interface. The interaction interface allows the user to display the list, insert a new value at the end of the list, remove the first occurance of a value in the list, sort the list from least to greatist, clear the list, and quit out of the menu. It uses a .h and .c file in the subdirectory named LinkedList. The .c file is where all of the functions to create, delete, add to, remove from, and sort the linked list live.
